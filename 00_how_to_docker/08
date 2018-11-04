@@ -1,0 +1,19 @@
+docker run --name alpine_container -it --rm alpine /bin/sh
+
+# docker ps
+
+# /bin/ash | /bin/sh | ash | sh
+
+# For interactive processes (like a shell), you must use -i -t together in order
+# to allocate a tty for the container process. Specifying -t is forbidden when
+# the client is receiving its standard input from a pipe.
+
+# -i Interactive mode (Keep STDIN open even if not attached)
+# -t Allocate a pseudo-TTY
+
+# --rm automatically clean up the container and remove the file system when the
+# container exits (in foreground processes container file systems can really pile up)
+
+# /bin/ash is Ash (Almquist Shell) provided by BusyBox
+
+# docker ps -a

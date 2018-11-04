@@ -1,0 +1,8 @@
+# Type these in container's terminal after creating it
+
+apt-get update -y > /dev/null 2>&1 && apt-get upgrade -y > /dev/null 2>&1 && apt-get install -y gcc > /dev/null 2>&1 && apt-get install -y git > /dev/null 2>&1 && apt-get install -y vim > /dev/null 2>&1
+
+# To create container put these:
+# docker run -it --rm debian /bin/bash
+
+# printf '#include <stdio.h>\nint main(){printf(\"\x1B[32mCompiled successfully.\x1B[0m\");return(0);}' > file.c && gcc file.c -o user_exe > /dev/null && ./user_exe

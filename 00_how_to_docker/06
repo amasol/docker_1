@@ -1,0 +1,10 @@
+docker run -d --name overlord -p 5000:80 --restart=always nginx
+
+# -d : run container in background and print its ID
+# https://docs.docker.com/engine/reference/run/#operator-exclusive-options
+# -p 5000:80
+# This binds port 80 of the container to port 5000 of the host machine (VM named Char)
+# format: ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort| containerPort
+# --restart restart_policy. always - Always restart the container regardless of the exit status.
+
+# docker ps

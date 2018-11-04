@@ -1,0 +1,24 @@
+docker-machine create --driver virtualbox Char
+
+# try 'docker-machine ls' to list available machines
+# 'docker-machine stop Char' to stop
+# 'docker-machine start Char' to start
+# 'docker-machine rm Char -y' to remove
+
+# docker-machine create --driver virtualbox --virtualbox-memory 4096 Char
+# eval $(docker-machine env Char)
+# docker-machine stop Char
+# cp -R ~/.docker "/tmp/"$USER""_docker/""
+# rm -rf ~/.docker
+# ln -s "/tmp/"$USER""_docker/"" ~/.docker
+# docker-machine start Char
+# eval $(docker-machine env Char)
+
+#https://docs.docker.com/machine/get-started/
+
+#To have launchd start docker-machine now and restart at login:
+#  brew services start docker-machine
+#Or, if you don't want/need a background service you can just run:
+#  docker-machine start
+
+# docker-machine create --driver virtualbox --virtualbox-memory 4096 Char

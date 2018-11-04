@@ -1,0 +1,8 @@
+eval $(docker-machine env Char)
+
+# Connect your shell to the new machine. You can now run Docker commands on this host.
+# docker-machine env Char
+# env | grep DOCKER
+# To see how to connect your Docker Client to the Docker Engine
+# running on this virtual machine, run: 'docker-machine env Char'
+# https://docs.docker.com/machine/get-started/#create-a-machine
